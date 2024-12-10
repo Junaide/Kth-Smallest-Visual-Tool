@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K-th Smallest</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <h1>K-th Smallest in an Unsorted Array a Visual Tool</h1>
+    <div id="controls">
+      <label for="arrayInput">Array (comma-separated): </label>
+      <input type="text" id="arrayInput" value="10,20,30,40,50">
+      <button id="randomInput">Random</button>
+      <label for="kInput">k (1-based): </label>
+      <input type="number" id="kInput" value="4" min="1">
+      <button id="startButton">Start</button>
+    </div>
+    <div id="instructions">
+      <p>Click on the canvas to perform each step of the algorithm.</p>
+    </div>
+    <script src="js/script.js"></script>
+    <div id="legend">
+        <div class="legend-item">
+          <span class="legend-color red"></span>
+          <span>Elements &lt; Pivot</span>
+        </div>
+        <div class="legend-item">
+          <span class="legend-color yellow"></span>
+          <span>Current Pivot</span>
+        </div>
+        <div class="legend-item">
+          <span class="legend-color green"></span>
+          <span>Elements &gt; Pivot</span>
+        </div>
+      </div>
+  </body>
+</html>

@@ -1,0 +1,131 @@
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    background: linear-gradient(135deg, #282c34, #4a5568);
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #controls {
+    margin: 20px 0;
+    padding: 10px 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    display: inline-block;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  input[type="text"],
+  input[type="number"] {
+    padding: 8px 12px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+    font-size: 16px;
+    width: 120px;
+    outline: none;
+  }
+  
+  input[type="text"]::placeholder,
+  input[type="number"]::placeholder {
+    color: #cccccc;
+  }
+  
+  input[type="text"]:focus,
+  input[type="number"]:focus {
+    background: rgba(255, 255, 255, 0.3);
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    background: #0078d7;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  button:hover {
+    background: #005fa3;
+    transform: scale(1.05);
+  }
+  
+  button:active {
+    background: #00447a;
+    transform: scale(1);
+  }
+  
+  #instructions {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #cccccc;
+    font-style: italic;
+  }
+  
+  canvas {
+    display: block;
+    margin: 20px auto;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  }
+  
+  @media (max-width: 600px) {
+    canvas {
+      width: 90%;
+      height: auto;
+    }
+  
+    input[type="text"],
+    input[type="number"] {
+      width: 100px;
+    }
+  }
+
+#legend {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    color: #ffffff;
+    font-size: 14px;
+  }
+  
+  .legend-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .legend-color {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    display: inline-block;
+    border: 2px solid rgba(255, 255, 255, 0.8);
+  }
+  
+  .legend-color.red {
+    background-color: rgb(255, 100, 100);
+  }
+  
+  .legend-color.yellow {
+    background-color: rgb(255, 255, 100);
+  }
+  
+  .legend-color.green {
+    background-color: rgb(100, 255, 100);
+  }
+  
+  
